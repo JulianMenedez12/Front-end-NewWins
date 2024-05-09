@@ -1,5 +1,5 @@
 //Cantida de noticias que se cargaran cada vez que se presione siguiente (5 + 1)
-let cantidadNoticias = 5;
+let cantidadNoticias = 15;
 let pageFinal = cantidadNoticias;
 let pageInicial = 0;
 let temaActual = "Tecnología";
@@ -55,7 +55,7 @@ let noticias = {
             item.appendChild(h2);
             item.appendChild(img);
             item.appendChild(info_item);
-            item.setAttribute("onclick", "location.href='"+url+"'");
+            item.setAttribute("onclick", "window.open('" + url + "', '_blank')");
             document.querySelector(".container-noticias").appendChild(item);
         }
 
